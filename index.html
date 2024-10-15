@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Hub</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">SPORTS HUB</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Matches</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">News</a></li>
+            <li class="ctn"><a href="#">Contact</a></li>
+        </ul>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg" alt="menu button" class="menu-btn">
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <div class="header-content">
+            <h2>Latest in Sports</h2>
+            <div class="line"></div>
+            <h1>EXCITEMENT IN EVERY GAME</h1>
+            <a href="#" class="ctn">Get the Latest Updates</a>
+        </div>
+    </header>
+
+    <!-- Match Schedule Section -->
+    <section class="schedule">
+        <div class="title">
+            <h1>Upcoming Matches</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="img/img1.jpeg" alt="Football Premier League">
+                <h4>Football: Premier League</h4>
+                <p>Team A vs Team B</p>
+                <p>Date: 20 Oct 2024 | Time: 19:00</p>
+                <a href="#" class="ctn">Details</a>
+            </div>
+            <div class="col">
+                <img src="img/img2.jpeg" alt="Basketball NBA Finals">
+                <h4>Basketball: NBA Finals</h4>
+                <p>Team X vs Team Y</p>
+                <p>Date: 21 Oct 2024 | Time: 21:00</p>
+                <a href="#" class="ctn">Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlight News Section -->
+    <section class="news">
+        <div class="news-content">
+            <h1>Latest Sports News</h1>
+            <div class="line"></div>
+            <p>Stay updated with the latest news in the world of sports, including football, basketball, and more.</p>
+            <a href="#" class="ctn">Read More</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h4>SPORTS HUB</h4>
+            <p>Your one-stop hub for all things sports. Follow the latest matches, teams, and sports news here.</p>
+            <ul class="socials">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SPORTS HUB. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu');
+        });
+    </script>
+    
+</body>
+</html>
